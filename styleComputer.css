@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-image: url(./Assets/secondaryBackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 170%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1{
+    margin-bottom: 1px;
+}
+
+
+#logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+#status{
+    margin: 0;
+}
+
+/* Symbol Selection Screen */
+#symbol-selection {
+    margin-top: 100px;
+}
+
+#symbol-selection button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #422ef7;
+    color: white;
+    border: none;
+}
+
+#symbol-selection button:hover {
+    background-color: #e047ff;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    position: relative;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+}
+
+.cell img {
+    width: 80px;
+    height: 80px;
+}
+
+.cell:hover {
+    background-color: lightgray;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #422ef7;
+    color: white;
+}
+
+button:hover {
+    background-color: #e047ff;
+}
+
+#winning-line {
+    position: absolute;
+    height: 5px;
+    background-color: #e047ff;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+    transform-origin: left center;
+    display: none;
+    z-index: 10;
+}
+
+@media(max-width: 600px){
+    h2{
+        margin: 0px;
+    }
+}

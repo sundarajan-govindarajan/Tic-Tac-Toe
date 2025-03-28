@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styleComputer.css">
+</head>
+<body>
+    <img src="Assets/Softtech_Ashram_Logo.png" alt="Softtech_Ashram_Logo" id="logo">
+    <div id="symbol-selection">
+        <h2>Select Your Symbol</h2>
+        <button id="chooseX">X</button>
+        <button id="chooseO">O</button>
+        <br>
+        <button id="go-back-menu">Main Menu</button>  
+    </div>
+ 
+    
+    <div id="game-screen" style="display: none;">
+        <h1>GALACTIC <br> Tic Tac Toe</h1><br>
+        <span>(If you are Genius lose this Game)</span>
+        <div class="game-container"><div id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <div id="winning-line"></div>
+        </div>
+        </div>
+        <h2 id="status">Player's Turn</h2>
+        
+        <div class="buttons">
+            <button id="reset">Restart Game</button>
+            <button id="main-menu">Main Menu</button>
+        </div>
+    </div>
+
+    <script src="computerScript.js"></script>
+</body>
+</html>
